@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+/*
+Mantis: 
+    #f6faf3
+    #e9f5e3
+    #d3eac8
+    #afd89d
+    #82bd69 <-
+    #61a146
+    #4c8435
+    #3d692c
+    #345427
+    #2b4522
+    #13250e
+*/
+body {
+    background-color: grey;
+}
+

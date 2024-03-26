@@ -1,0 +1,12 @@
+h1,h2 {
+    text-align: center;
+}
+.appContainer {
+    background-color: #13250e;
+    border-radius: 25px;
+    padding: 20px;
+    width: 800px;
+    text-align:center;
+    margin: auto;
+    color: #f6faf3;
+}

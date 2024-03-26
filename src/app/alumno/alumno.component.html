@@ -1,0 +1,11 @@
+<div class="alumnoContainer">
+    <h2>ALUMNO: {{alumno.nombre}}</h2>
+    <div class="contenedor">
+        <div class="clave">DNI:</div>
+        <div class="valor">{{alumno.dni}}</div>
+    </div>
+    <div class="contenedor">
+        <div class="clave">Nombre:</div>
+        <div class="valor"><input [(ngModel)]="alumno.nombre"></div>
+    </div>
+</div>
