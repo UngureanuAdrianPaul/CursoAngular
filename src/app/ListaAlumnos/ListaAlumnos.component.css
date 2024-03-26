@@ -19,6 +19,7 @@ h2 {
     grid-template-columns: 25% 75%;
     padding: 5px;
 }
+
 .clave {
     background-color: #4c8435;
     margin-right: 5px;
@@ -34,4 +35,7 @@ h2 {
     border-bottom-right-radius: 25px;
     text-align: left; 
     color: #13250e;
+}
+.valorSelected {
+    background-color: #4c8435;
 }
