@@ -1,10 +1,14 @@
 <div class="alumnoContainer">
     <h2>Listado de alumnos del curso</h2>
     <ul>
-        <li class="contenedor" *ngFor="let alumno of alumnos">
+        <li class="contenedor" *ngFor="let alumno of alumnos" (click)="onSelectAlumno(alumno)">
             <div class="clave">{{alumno.dni}}</div>
             <div class="valor">{{alumno.nombre}}</div>
         </li>
     </ul>
-    
+    <h2>Alumno Seleccionado</h2>
+    <div class="contenedor" *ngIf="alumnoActual.dni!=-1">
+        <div class="clave">Actual: {{alumnoActual.dni}}</div>
+        <div class="valor">{{alumnoActual.nombre}}</div>
+    </div>  
 </div>

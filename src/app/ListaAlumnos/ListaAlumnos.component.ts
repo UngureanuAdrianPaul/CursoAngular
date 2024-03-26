@@ -18,4 +18,14 @@ import { CURSO } from '../claseDeAlumnos';
 })
 export class ListaAlumnosComponent {
   alumnos = CURSO; 
+  alumnoActual : Alumno;
+
+  constructor(){
+    this.alumnoActual={dni:-1,nombre:""};
+  }
+
+  onSelectAlumno(alumno:Alumno):void  {
+    console.log("Alumno seleccionado: "+alumno.nombre);
+    this.alumnoActual=alumno;
+  }
 }
