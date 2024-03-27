@@ -26,6 +26,11 @@ export class ListaAlumnosComponent {
 
   onSelectAlumno(alumno:Alumno):void  {
     console.log("Alumno seleccionado: "+alumno.nombre);
-    this.alumnoActual=alumno;
+    if (this.alumnoActual!=alumno){
+      this.alumnoActual=alumno;
+    } else {
+      this.alumnoActual={dni:-1,nombre:""};
+    }
+    
   }
 }
