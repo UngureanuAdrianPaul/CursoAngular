@@ -17,3 +17,45 @@ body {
     background-color: grey;
 }
 
+h2 {
+    background-color: #4c8435;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.alumnoContainer {
+    background-color: #82bd69;
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px;
+    text-align:center;
+    margin: auto;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 5px;
+}
+
+.clave {
+    background-color: #4c8435;
+    margin-right: 5px;
+    padding: 5px;   
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: right;
+}
+.valor {
+    background-color: #d3eac8;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: left; 
+    color: #13250e;
+}
+.valorSelected {
+    background-color: #4c8435;
+}
+

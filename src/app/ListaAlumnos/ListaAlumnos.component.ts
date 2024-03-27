@@ -4,6 +4,7 @@ import { Alumno } from '../Alumno';
 import { FormsModule } from '@angular/forms';
 import { UpperCasePipe } from '@angular/common';
 import { CURSO } from '../claseDeAlumnos';
+import { AlumnoDetalleComponent } from '../alumno-detalle/alumno-detalle.component';
 
 
 @Component({
@@ -11,26 +12,27 @@ import { CURSO } from '../claseDeAlumnos';
   standalone: true,
   imports: [FormsModule,
     UpperCasePipe,
-    CommonModule
+    CommonModule,
+    AlumnoDetalleComponent
   ],
   templateUrl: './ListaAlumnos.component.html',
   styleUrl: './ListaAlumnos.component.css'
 })
 export class ListaAlumnosComponent {
-  alumnos = CURSO; 
-  alumnoActual : Alumno;
+  alumnos = CURSO;
+  alumnoActual: Alumno;
 
-  constructor(){
-    this.alumnoActual={dni:-1,nombre:""};
+  constructor() {
+    this.alumnoActual = { dni: -1, nombre: "" };
   }
 
-  onSelectAlumno(alumno:Alumno):void  {
-    console.log("Alumno seleccionado: "+alumno.nombre);
-    if (this.alumnoActual!=alumno){
-      this.alumnoActual=alumno;
+  onSelectAlumno(alumno: Alumno): void {
+    console.log("Alumno seleccionado: " + alumno.nombre);
+    if (this.alumnoActual != alumno) {
+      this.alumnoActual = alumno;
     } else {
-      this.alumnoActual={dni:-1,nombre:""};
+      this.alumnoActual = { dni: -1, nombre: "" };
     }
-    
+
   }
 }

@@ -6,9 +6,5 @@
             <div class="valor"[class.valorSelected]="alumno===alumnoActual">{{alumno.nombre}}</div>
         </li>
     </ul>
-    <h2 *ngIf="alumnoActual.dni!=-1">Alumno Seleccionado</h2>
-    <div class="contenedor" *ngIf="alumnoActual.dni!=-1">
-        <div class="clave">Actual: {{alumnoActual.dni}}</div>
-        <div class="valor">{{alumnoActual.nombre}}</div>
-    </div>  
+    <app-alumno-detalle [alumno]="alumnoActual"></app-alumno-detalle> 
 </div>
