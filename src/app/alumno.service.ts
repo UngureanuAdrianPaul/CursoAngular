@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Alumno } from './Alumno';
+import { CURSO } from './claseDeAlumnos';
+import { Observable, of } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
@@ -6,4 +10,8 @@ import { Injectable } from '@angular/core';
 export class AlumnoService {
 
   constructor() { }
+
+  getAlumnos():Observable<Alumno[]>{
+    return of(CURSO);
+  }
 }
