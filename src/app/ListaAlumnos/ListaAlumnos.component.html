@@ -3,7 +3,7 @@
     <ul>
         <li class="contenedor" *ngFor="let alumno of alumnos" (click)="onSelectAlumno(alumno)">
             <div class="clave">{{alumno.dni}}</div>
-            <div class="valor"[class.valorSelected]="alumno===alumnoActual">{{alumno.nombre}}</div>
+            <div class="valor" [class.valorSelected]="alumno===alumnoActual">{{alumno.nombre}}</div>
         </li>
     </ul>
     <app-alumno-detalle [alumno]="alumnoActual"></app-alumno-detalle> 
