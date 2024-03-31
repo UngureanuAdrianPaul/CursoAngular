@@ -14,4 +14,8 @@ export class AlumnoService {
   getAlumnos():Observable<Alumno[]>{
     return of(CURSO);
   }
+
+  getAlumnosAngular():Observable<Alumno[]>{
+    return of(CURSO.filter((alumno)=>alumno.angular===true));
+  }
 }

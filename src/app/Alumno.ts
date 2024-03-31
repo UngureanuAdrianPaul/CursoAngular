@@ -1,4 +1,5 @@
 export interface Alumno {
     dni : number,
-    nombre : string
+    nombre : string,
+    angular : boolean
 }

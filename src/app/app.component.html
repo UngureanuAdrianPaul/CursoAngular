@@ -1,4 +1,14 @@
 <div class="appContainer">
     <h1>{{title}}</h1>
-    <app-ListaAlumnos></app-ListaAlumnos>
+    <nav class="principalContainer">
+        <div class="contenedor" > 
+            <div class="clavePrincipal">Mostrar:</div>
+            <div class="valorPrincipal" routerLink="/ListaAlumnos" routerLinkActive="active">Listado de alumnos completo</div>            
+        </div>  
+        <div class="contenedor" > 
+            <div class="clavePrincipal">Mostrar:</div>
+            <div class="valorPrincipal" routerLink="/ListaAngular" routerLinkActive="active">Listado de alumnos Angular</div>            
+        </div>     
+    </nav>
+    <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,11 @@
+<div class="alumnoContainer">
+    <h2>Listado de alumnos de Angular</h2>
+    <ul>
+        <li class="contenedor" *ngFor="let alumno of alumnos" 
+        (click)="onSelectAlumno(alumno)">
+            <div class="clave" *ngIf="alumno.angular===true">{{alumno.dni}}</div>
+            <div class="valor" *ngIf="alumno.angular===true" [class.valorSelected]="alumno===alumnoActual">{{alumno.nombre}}</div>
+        </li>
+    </ul>
+    <app-alumno-detalle [alumno]="alumnoActual"></app-alumno-detalle> 
+</div>

@@ -13,6 +13,6 @@ export class AlumnoDetalleComponent {
   @Input() alumno: Alumno;
 
   constructor() {
-    this.alumno = { dni: -1, nombre: "" };
+    this.alumno = { dni: -1, nombre: "", angular:false };
   }
 }
