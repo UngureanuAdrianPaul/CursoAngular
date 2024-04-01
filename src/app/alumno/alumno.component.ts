@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Alumnos } from '../Alumnos';
+import { Alumno } from '../Alumno';
 import { FormsModule } from '@angular/forms';
 import { UpperCasePipe } from '@angular/common';
 
@@ -14,7 +14,7 @@ import { UpperCasePipe } from '@angular/common';
   styleUrl: './alumno.component.css'
 })
 export class AlumnoComponent {
-  alumno : Alumnos = {
+  alumno : Alumno = {
     dni:123,
     nombre:"Daniel"
   }

@@ -1,0 +1,9 @@
+<div class="alumnoContainer">
+    <h2>LISTADO DE ALUMNOS DEL CURSO</h2>
+    <ul>
+        <li class="contenedor" *ngFor="let alumno of alumnos">
+            <div class="clave">{{alumno.dni}}</div>
+            <div class="valor">{{alumno.nombre}}</div>
+        </li>
+    </ul>
+</div>

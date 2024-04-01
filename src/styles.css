@@ -1,19 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
 /*
-Mantis: 
-    #f6faf3
-    #e9f5e3
-    #d3eac8
-    #afd89d
-    #82bd69 <-
-    #61a146
-    #4c8435
-    #3d692c
-    #345427
-    #2b4522
-    #13250e
+Mantis:(#f6faf3,#e9f5e3,#d3eac8,#afd89d,#82bd69 <-,#61a146
+        #4c8435,#3d692c,#345427,#2b4522,#13250e)
+Petite Orchid:(#fbf5f5,#f7eae9,#f1d8d7,#e7bdba,#d69490<-,#c5736e,
+                #af5853,#924843,#7a3e3a,#673835,#361b19)
+Cerulean Blue:(#ecf4ff,#dceaff,#bfd6ff,#98baff,#7091ff,#4f69ff,
+                #3847fc<-,#232edf,#1f2ab4,#222c8d,#141852)
 */
 body {
     background-color: grey;
 }
+
+h2 {
+    background-color: #4c8435;
+    border-radius: 25px;
+    margin: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.principalContainer {
+    background-color: #d69490;
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px;
+    text-align:center;
+    margin: auto;
+}
+.clavePrincipal {
+    background-color: #924843;
+    margin-right: 5px;
+    padding: 5px;   
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: right;
+}
+.valorPrincipal {
+    background-color: #f1d8d7;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: left; 
+    color: #13250e;
+}
+
+.alumnoContainer {
+    background-color: #82bd69;
+    border-radius: 25px;
+    padding: 20px;
+    width: 400px;
+    text-align:center;
+    margin: auto;
+}
+.contenedor {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    padding: 5px;
+}
+
+.clave {
+    background-color: #4c8435;
+    margin-right: 5px;
+    padding: 5px;   
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    text-align: right;
+}
+.valor {
+    background-color: #d3eac8;
+    padding: 5px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    text-align: left; 
+    color: #13250e;
+}
+.valorSelected {
+    background-color: #4c8435;
+}
+
 
